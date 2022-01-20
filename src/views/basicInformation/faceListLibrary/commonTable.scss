@@ -1,0 +1,44 @@
+.mt12 {
+    margin-top: 12px;
+}
+.face-img {
+    display: inline-block;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+}
+.man-color {
+    color: #43cf9b;
+}
+.woman-color {
+    color: red;
+}
+.name-list {
+    display: flex;
+    justify-content: center;
+    span {
+        display: inline-block;
+        margin-right: 3px;
+    }
+    i {
+        color: #d1d1d1;
+    }
+}
+.colst {
+    color: #43cf9b;
+}
+.no__pic {
+    display: inline-block;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    padding: 2px;
+    background-color: #eeeeee;
+    span {
+        display: inline-block;
+        line-height: 20px;
+        text-align: center;
+        color: #999999;
+        margin-top: 2px;
+    }
+}

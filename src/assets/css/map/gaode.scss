@@ -1,0 +1,123 @@
+.amap-info-content {
+    background-color: #050A25;
+    padding: 0;
+}
+
+.amap-info-close {
+    top: 6px;
+}
+
+.amap-info-sharp {
+    border-top: 8px solid #050A25 !important;
+}
+
+.gao-de-box {
+    .surver {
+        width: 280px;
+    }
+
+    .embellish {
+        width: 100%;
+        height: 30px;
+        background-color: #1B4E79;
+
+    }
+
+    .embellish > div:first-child {
+        float: left;
+        width: 30px;
+        height: 30px;
+    }
+
+    .embellish > div:first-child > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .embellish > div:nth-child(2) {
+        float: left;
+        width: 225px;
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .unitdetail {
+        padding: 10px 0;
+        width: 98%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .unittitle {
+        margin-top: 3px;
+        padding: 0 10px;
+        color: #fff;
+    }
+
+    .unittitle > span {
+        font-weight: bold;
+    }
+
+    .detail {
+        margin-left: 40px !important;
+    }
+
+    .button {
+        float: left;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 20px 20px 40px 0;
+        background: #2F91E5;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 20px auto;
+        background: #2F91E5;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}
+
+.region {
+    .search-for {
+        .el-input-group__append {
+            border: 0;
+            background-color: #375AFE;
+            color: #fff;
+
+            i {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.amap-toolbar {
+    right: 30px;
+    left: auto !important;
+}
+
+
+// 去掉地图显示弹窗播放视频和列表的弹窗默认样式
+.cityMap-dialog {
+    .el-dialog__header {
+        display: none;
+    }
+
+    .el-dialog__body {
+        padding: 0 !important;
+    }
+}

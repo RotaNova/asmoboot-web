@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "amis": "^1.2.4-beta.11",
+    "copy-to-clipboard": "^3.3.1",
+    "react-dom": "^17.0.2"
+  }
+}

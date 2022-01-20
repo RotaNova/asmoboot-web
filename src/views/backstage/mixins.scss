@@ -1,0 +1,50 @@
+// 构成文件自动...的css
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap; //不换行
+    text-overflow: ellipsis; //超过显示。。。
+}
+// 抽取flex部分 （水平方向 竖直方向）
+@mixin flex($hov: space-between, $col: center) {
+    display: flex;
+    // 两边对齐
+    justify-content: $hov;
+    // 水平方向居中
+    align-items: $col;
+}
+@mixin font($fz: 14px, $fw: 400, $color: #999999) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin webkit-scrollbar() {
+    /*chrome--------------------------------------------start*/
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgb(255, 255, 255);
+        border-radius: 8px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(107, 106, 106);
+        border-radius: 8px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(53, 52, 52);
+    }
+    .el-menu::-webkit-scrollbar,
+    .el-table__body-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .el-menu:hover::-webkit-scrollbar,
+    .el-table__body-wrapper:hover::-webkit-scrollbar {
+        display: block;
+    }
+    /*chrome--------------------------------------------end*/
+}

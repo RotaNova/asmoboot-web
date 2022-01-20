@@ -1,0 +1,189 @@
+@import '@/views/backstage/mixins.scss';
+.roomlist {
+    display: flex;
+    /* overflow-y: auto;
+  height: 100vh; */
+    .card {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 23.5%;
+        min-width: 390px;
+        height: 192px;
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        opacity: 1;
+        border-radius: 4px;
+        margin: 20px 20px 0 0;
+        padding: 24px;
+        .room {
+            @include flex;
+            .classroom {
+                &__name {
+                    .projectName {
+                        width: 187px;
+                        @include ellipsis();
+                    }
+                    display: flex;
+                    align-items: center;
+                    @include font(16px, 400, #333333);
+                    line-height: 21px;
+                    //TODO:运维
+                    .action {
+                        @include font(14px, 400, #43cf9b);
+                        line-height: 19px;
+                        margin-right: 10px;
+                        width: 75px;
+                    }
+                }
+                &__res {
+                    @include font(12px, 400, #999999);
+                    line-height: 16px;
+                }
+            }
+            .info {
+                text-align: right;
+            }
+        }
+        .message {
+            @include flex;
+            align-items: flex-end;
+            /* 产品信息盒子 */
+            .text {
+                &__message {
+                    span {
+                        display: block;
+                        margin-right: 10px;
+                        @include font(12px, 400, #999999);
+                    }
+                }
+                span {
+                    @include font(12px, 400, #999999);
+                }
+            }
+            &__btn {
+                line-height: 19px;
+                text-align: right;
+            }
+        }
+        /* &:nth-child(4n + 0) {
+            margin-right: 0;
+        } */
+    }
+    .someMessage {
+        @include flex;
+        overflow: hidden;
+        width: 23.5%;
+        min-width: 390px;
+        height: 192px;
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        margin: 20px 20px 0 0;
+        padding: 20px;
+        .some {
+            width: 124px;
+            text-align: center;
+            .mess {
+                line-height: 19px;
+                @include font(14px, 400, #555555);
+            }
+            .num {
+                margin-top: 32px;
+                @include font(30px, 400, #555555);
+            }
+        }
+    }
+    .allMessage {
+        @include flex;
+        overflow: hidden;
+        width: 49%;
+        min-width: 500px;
+        height: 192px;
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        margin-top: 20px;
+        padding: 20px;
+        .all {
+            width: 124px;
+            text-align: center;
+            .mess {
+                line-height: 19px;
+                @include font(14px, 400, #555555);
+            }
+            .num {
+                margin-top: 32px;
+                @include font(30px, 400, #555555);
+            }
+        }
+    }
+}
+.dataPic {
+    display: flex;
+    flex-direction: column;
+    width: 1628px;
+    height: 256px;
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px;
+    .top {
+        position: relative;
+        &__now {
+            @include font(14px, 400, #9a9a9a);
+            height: 19px;
+            font-family: Microsoft YaHei;
+            line-height: 19px;
+            margin-right: 16px;
+            span {
+                display: inline-block;
+            }
+        }
+        &__num {
+            @include font(20px, bold, #333333);
+            height: 26px;
+            font-family: Microsoft YaHei;
+            line-height: 26px;
+        }
+        .message {
+            position: absolute;
+            display: flex;
+            right: 14px;
+            top: 8px;
+            .icon-blue {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 8px;
+                border-radius: 50%;
+                background-color: #007aff;
+            }
+            .icon-orange {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 8px;
+                border-radius: 50%;
+                background-color: #ff7c00;
+            }
+            .warning {
+                margin-right: 25px;
+            }
+        }
+    }
+    .echarts {
+        flex: 1;
+        #chartPic {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.num-red {
+    color: #f51919 !important;
+}

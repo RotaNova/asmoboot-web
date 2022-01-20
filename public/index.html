@@ -1,0 +1,248 @@
+<!--
+ * @Descripttion: 兴航研究院
+ * @version:
+ * @Author: lsc
+ * @email: 1374294182@qq.com
+ * @Date: 2021-04-14 10:35:01
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新航科技管理平台</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords"
+        content="新航官方，物联网，智慧园区，智慧校园，智慧工厂，智慧城市，数字孪生，人工智能，大数据，舆情研判，监控，楼宇，社区，人脸识别，视频结构化，图像识别，智慧用电，考勤，归寝，学生，车辆，闸机，车牌，全景地图，小程序" />
+    <meta name="description"
+        content="面向企事业单位的综合管理平台ISC,提供人员、车辆通行管理，智慧用电管理，提供定制化AI算法，实现视频结构化，图像分析，视频行为识别等，联动物联网设备，实现智能联动策略" />
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_2399411_aa9r2cwywig.css" />
+    <link rel="stylesheet" href="./css/amis.css" />
+    <!-- 引入组件库 -->
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.5.2/vue-router.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
+    <script src="./js/momen.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./EasyPlayer-element.min.js"></script>
+    <script src="https://houtai.baidu.com/v2/jssdk"></script>
+    <script src="https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
+    <!-- TODO:屏蔽element ui-->
+    <!-- <script type="text/javascript" src="http://webapi.amap.com/ui/1.0/main.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" /> -->
+    <!-- <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" /> -->
+    <!-- <script type="text/javascript" src="https://unpkg.com/amap-js/dist/amap-js.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/vue-router/3.0.3/vue-router.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/echarts/4.2.1/echarts.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script> -->
+    <!-- <script src="https://webapi.amap.com/maps?v=1.4.14&key=53cf2172815f73e280b849ddd383cef7&plugin=AMap.ControlBar"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+    <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+    <!-- </script> -->
+    <!-- <script src="https://unpkg.com/vue-cookies@1.5.13/vue-cookies.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script> -->
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .chromeframe {
+            margin: 0.2em 0;
+            background: #ccc;
+            color: #000;
+            padding: 0.2em 0;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);
+                /* IE 9 */
+                transform: rotate(0deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);
+                /* IE 9 */
+                transform: rotate(360deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);
+                /* IE 9 */
+                transform: rotate(0deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);
+                /* IE 9 */
+                transform: rotate(360deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+
+        #loader-wrapper .loader-section {
+            position: fixed;
+            top: 0;
+            width: 51%;
+            height: 100%;
+            background: #49a9ee;
+            /* Old browsers */
+            z-index: 1000;
+            -webkit-transform: translateX(0);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(0);
+            /* IE 9 */
+            transform: translateX(0);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+
+        #loader-wrapper .loader-section.section-left {
+            left: 0;
+        }
+
+        #loader-wrapper .loader-section.section-right {
+            right: 0;
+        }
+
+        /* Loaded */
+        .loaded #loader-wrapper .loader-section.section-left {
+            -webkit-transform: translateX(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);
+            /* IE 9 */
+            transform: translateX(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .loaded #loader-wrapper .loader-section.section-right {
+            -webkit-transform: translateX(100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);
+            /* IE 9 */
+            transform: translateX(100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .loaded #loader {
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .loaded #loader-wrapper {
+            visibility: hidden;
+            -webkit-transform: translateY(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);
+            /* IE 9 */
+            transform: translateY(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.3s 1s ease-out;
+            transition: all 0.3s 1s ease-out;
+        }
+
+        /* JavaScript Turned Off */
+        .no-js #loader-wrapper {
+            display: none;
+        }
+
+        .no-js h1 {
+            color: #222222;
+        }
+
+        #loader-wrapper .load_title {
+            font-family: 'Open Sans';
+            color: #fff;
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+            z-index: 9999999999999;
+            position: absolute;
+            top: 60%;
+            opacity: 1;
+            line-height: 30px;
+        }
+
+        #loader-wrapper .load_title span {
+            font-weight: normal;
+            font-style: italic;
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        window._CONFIG = {}
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+            <div class="load_title">企业综合管理平台，版权@福建新航物联网科技有限公司</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: 'b06e830813c68b4ad085ccf7d64c7b22'
+        }
+    </script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.2/echarts.min.js"></script>
+    <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+    <script src="https://a.amap.com/jsapi_demos/static/china.js"></script>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=c9df7464626c448a3298faf44079eb3c&plugin=AMap.DistrictSearch">
+    </script>
+    <script src="//webapi.amap.com/ui/1.0/main.js"></script>
+</body>
+<script type="text/javascript">
+    ;
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth
+                if (!clientWidth) return
+                if (clientWidth < 1920) {
+                    docEl.style.fontSize =
+                        100 * (clientWidth / 1920) * (clientWidth / 1920) + 'px'
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px'
+                }
+            }
+        if (!doc.addEventListener) return
+        win.addEventListener(resizeEvt, recalc, false)
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+    })(document, window)
+</script>
+
+</html>

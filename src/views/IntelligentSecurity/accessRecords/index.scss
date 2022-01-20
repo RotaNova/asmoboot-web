@@ -1,0 +1,87 @@
+.disflexs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.solve {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    background: #f51919;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.wanging1 {
+    background: #ff7c00;
+}
+
+.wanging2 {
+    background: #d1d1d1;
+}
+
+.dispos {
+    background: #43cf9b;
+}
+
+.wangd1 {
+    color: #d1d1d1 !important;
+}
+
+.avatar-uploader>.ant-upload {
+    width: 128px;
+    height: 128px;
+}
+
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.uplo-annotation {
+    text-align: center;
+    color: #d1d1d1;
+    margin-top: 8px;
+}
+
+.access {
+    display: inline-block;
+    // width: 28px;
+    height: 24px;
+    background: #007aff;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.outpull {
+    background: rgba(0, 122, 255, 0.5);
+}
+
+.general {
+    background-color: #f6f8f9;
+    color: #666;
+}
+
+.safety {
+    color: rgb(43, 190, 135);
+}
+
+.warning {
+    color: rgb(255, 124, 0);
+}
+
+.danger {
+    color: red;
+}

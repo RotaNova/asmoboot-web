@@ -1,0 +1,289 @@
+@import "colour";
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    color: $--font-color;
+    font-weight: 400;
+    font-family: PingFangSC-Regular, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, button, a {
+    outline: 0 none !important;
+    blr: expression(this.onFocus=this.blur());
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tips {
+    color: $--color-danger;
+    font-size: 12px;
+}
+
+ul li, ol li {
+    list-style-type: none;
+}
+
+input, textarea, input:focus, textarea:focus, button {
+    outline: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+.mt13 {
+    margin-top: 13px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+.ml60 {
+    margin-left: 60px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.pm30{
+    padding-bottom: 30px;
+}
+
+.w100 {
+    width: 100%;
+    height: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.centered {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.congested {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+.danger {
+    color: $--color-danger;
+}
+
+.success {
+    color: $--color-success;
+}
+
+.warning {
+    color: $--color-warning;
+}
+
+.white {
+    color: #fff;
+}
+
+.info {
+    color: $--color-info;
+}
+
+.primary {
+    color: $--color-primary;
+}
+
+// 滚动条样式
+.scroll-bar, .scroll-bar-x {
+    overflow-y: auto;
+	&.scroll-bar-x {
+		overflow-y: hidden;
+		overflow-x: auto !important;
+	}
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+        border-radius: 50%;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 0 5px #e5e5e5;
+        background: #b7b7b7;
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px #fff;
+        border-radius: 8px;
+        background: #e5e5e5;
+    }
+}
+// 表格外框
+.shadow_view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+// 表格列表操作栏
+.operating {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+// 表格样式
+.tabel_list {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+// 条件筛选过滤
+.filter {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+
+    .filter-box {
+        height: 32px;
+        display: flex;
+        margin-bottom: 10px;
+
+        label {
+            width: auto;
+            flex: 0 0 auto;
+            font-size: 14px;
+            line-height: 32px;
+            margin-right: 10px;
+        }
+
+        .all {
+            flex: 1;
+            width: 100%;
+        }
+    }
+}
+
+
+// 表单
+.layoyt-flex {
+    display: flex;
+    label {
+        width: auto;
+        flex: 0 0 auto;
+        font-size: 16px;
+        line-height: 32px;
+        margin-right: 10px;
+    }
+
+    .all {
+        flex: 1;
+        width: 100%;
+    }
+}

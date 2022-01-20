@@ -1,0 +1,101 @@
+@import '@/views/backstage/mixins.scss';
+.roomlist {
+    /* overflow-y: auto;
+  height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 23%;
+        min-width: 385px;
+        height: 192px;
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        opacity: 1;
+        border-radius: 4px;
+        margin: 20px 20px 0 0;
+        padding: 24px;
+        .room {
+            @include flex;
+            .classroom {
+                &__name {
+                    display: flex;
+                    align-items: center;
+                    .projectName {
+                        width: 235px;
+                        @include ellipsis();
+                    }
+                    @include font(16px, 400, #333333);
+                    .unspan {
+                        min-width: 23px;
+                        height: 23px;
+                        line-height: 23px;
+                        margin-left: 3px;
+                        padding: 1px 6px;
+                        background-color: #f51919;
+                        border-radius: 11px;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #ffffff;
+                        // transform: scale(0.5);
+                        transform-origin: left center;
+                    }
+                }
+                &__res {
+                    @include font(12px, 400, #999999);
+                    line-height: 16px;
+                }
+            }
+            .info {
+                text-align: right;
+                &__text {
+                    &__num {
+                        @include font(26px, bold, #666666);
+                        line-height: 21px;
+                    }
+                }
+                &__yw {
+                    @include font(14px, 400, #43cf9b);
+                    width: 56px;
+                    line-height: 19px;
+                }
+            }
+        }
+        .message {
+            @include flex;
+            /* 产品信息盒子 */
+            align-items: flex-end;
+            .text {
+                &__message {
+                    span {
+                        display: inline-block;
+                        margin-right: 10px;
+                        @include font(12px, 400, #999999);
+                    }
+                }
+                span {
+                    @include font(12px, 400, #999999);
+                }
+            }
+            &__num {
+                @include font(12px, 400, #999999);
+                line-height: 19px;
+                text-align: right;
+                &__address {
+                    width: 200px;
+                }
+            }
+        }
+        // &:nth-child(4n + 0) {
+        //     margin-right: 0;
+        // }
+    }
+}
+.pages {
+    position: absolute;
+    right: 57px;
+    bottom: 40px;
+}

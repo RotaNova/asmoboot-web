@@ -1,0 +1,327 @@
+.be-int .ant-input,
+.be-int .ant-select {
+    width: 3.30rem;
+}
+
+.be-240 .ant-input,
+.be-240 .ant-select {
+    width: 240px;
+}
+
+.be-160.ant-input,
+.be-160 .ant-select {
+    width: 160px;
+}
+
+/* margin-left */
+.ml5 {
+    margin-left: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* 数字 */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus,
+/* 消除默认样式 */
+button {
+    outline: none;
+    background: none;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt13 {
+    margin-top: 13px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml60 {
+    margin-left: 60px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.pm30 {
+    padding-bottom: 30px;
+}
+
+/* 宽度100% */
+.w100 {
+    width: 100%;
+    height: auto;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+/* 弹性布局 */
+.disflex {
+    display: flex;
+}
+
+.segmentation {
+    color: #D1D1D1;
+    margin: 0 5px;
+}
+
+.roleManage .ant-tabs-bar {
+    border: none;
+}
+
+.map_online {
+    background-color: #43cf9b;
+}
+
+.map_onoutline {
+    background-color: #ccc;
+}
+
+.Authorized-users {
+    color: #007aff;
+}
+
+.to-normal {
+    color: green;
+}
+
+.to-frost {
+    color: orange;
+}
+
+.to-danger {
+    color: red;
+}
+
+/* 鼠标点击变成小手 */
+.cursor {
+    cursor: pointer;
+}
+
+.ant-modal-footer {
+    text-align: center !important;
+}
+
+.ant-modal-header {
+    border: 0 !important;
+}
+
+.ant-modal-footer {
+    border: 0 !important;
+}
+
+/* 字体颜色 666*/
+.font666 {
+    color: #666;
+}
+
+/* 字体颜色999 */
+.font999 {
+    color: #999;
+}
+
+.gutter-row {
+    color: #333;
+}
+
+.font888 {
+    color: #888;
+}
+
+.fontblack {
+    color: #000;
+}
+
+.font555 {
+    color: #555555;
+}
+
+.singleOverflow {
+    display: inline-block;
+    width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.singleOverflow200 {
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.singleOverflow150 {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.singleOverflow100 {
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.singleOverflow60 {
+    display: inline-block;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.iconguoqi {
+    font-size: 16px;
+}
+
+.tree-operate {
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.tranx65 {
+    transform: translateX(-65px)
+}
+
+.ant-modal-wrap {
+    z-index: 1030 !important;
+}
+
+.ant-modal-mask {
+    z-index: 1030 !important;
+}
+
+.ant-message {
+    z-index: 2045 !important;
+}
+
+.headserch .be-int .ant-input,
+.headserch .be-int .ant-select {
+    width: 1.7rem !important;
+}
+
+.ant-input-disabled {
+    color: #666 !important;
+}
